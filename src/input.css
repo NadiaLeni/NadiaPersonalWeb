@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .nav{
+        @apply relative mx-6 text-darkblue text-lg font-poppins hover:text-hotpink hover:font-semibold
+    }
+
+    .nav::after{
+        @apply content-[''] bg-hotpink h-[3px] w-[0%] left-0 -bottom-[12px] rounded-full absolute duration-300
+    }
+
+    .nav:hover::after{
+        @apply w-[100%]
+    }
+
+    .fa-brands{
+        color: #8785a2;
+    }
+
+    .fa-brands:hover{
+        color: #FF92A2;
+    }
+
+    .buttonStyle1{
+        @apply font-poppins text-hotpink text-base font-semibold p-2.5 bg-white rounded-xl
+    }
+
+    .buttonStyle1:hover, .buttonStyle2:hover{
+        color: #F6F6F6;
+        background-color: #8785a2;
+    }
+
+    .buttonStyle2{
+        @apply font-poppins text-white text-base font-semibold p-2.5 bg-hotpink rounded-xl
+    }
+
+    .skill{
+        @apply transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300
+    }
+
+    .projectImage{
+        width: 575px;
+        /* height: 300px; */
+        border-radius: 12px;
+        border-width: 5px;
+        border-color:#FFE2E2;
+        margin: 48px;
+    }
+
+    .projectText{
+        margin: 24px;
+    }
+
+    .borderStyle{
+        border-radius: 24px;
+        background-color: #F6F6F6;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        display: none;
+    }
+
+}

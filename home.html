@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./dist/output.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lato:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/120188f442.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- 
+
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+</head>
+<body>
+    <section id="Header">
+      <div class="flex flex-row content-center justify-between px-24 py-3 fixed top-0 left-0 right-0 bg-white z-50">
+        <div class="flex flex-row content-center">
+          <h1 class="font-logo text-6xl text-darkblue">Nadia.</h1>
+          <h1 class="font-logo text-6xl text-hotpink">L</h1>
+        </div>
+        <div class="flex content-center py-4">
+          <a href="#" class="nav">Home</a>
+          <a href="#AboutMe" class="nav">About Me</a>
+          <a href="#LatestProject" class="nav">Portfolio</a>
+          <a href="#Footer" class="nav">Contact</a>
+        </div>
+        <div class="flex flex-row content-center py-4">
+          <a href="https://www.instagram.com/nad.lien40" target="_blank" class="px-4"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          <a href="https://www.linkedin.com/in/nadia-leni-lien-2b8478220/" target="_blank" class="px-4"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+          <a href="https://wa.me/6285269507083" target="_blank" class="px-4"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+          <a href="https://github.com/NadiaLeni" target="_blank" class="px-4"><i class="fa-brands fa-github fa-xl"></i></a>
+        </div>
+      </div>
+    </section>
+      
+    <section id="LandingPage">
+      <div class="bg-cover bg-center mt-20" style="background-image: url(./img/background.png); height: 100vh;">
+        <div class="flex flex-col justify-center h-screen">
+          <div class="flex flex-row mx-24 justify-between">
+            <div class="flex flex-col justify-center">
+              <div class="mb-4">
+                <h1 class="font-poppins text-darkblue font-bold text-6xl leading-tight">Hi! I Am</h1>
+                <h1 class="font-poppins text-darkblue font-bold text-6xl leading-tight">Nadia Leni Lien</h1>
+              </div>
+              <p class="font-poppins text-darkblue font-medium text-lg mb-8">Computer Science Student</p>
+              <div class="flex flex-row">
+                <div class="mr-8">
+                  <a href="https://wa.me/6285269507083" target="_blank">
+                    <button class="buttonStyle1">Let's Talk<i class="fa-regular fa-paper-plane fa-sm ml-1.5"></i></button>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://drive.google.com/file/d/1obAmCfeRuJZMwI-DdS1tutyavdhbYo2H/view?usp=sharing" target="_blank">
+                    <button class="buttonStyle2">See My CV<i class="fa-solid fa-arrow-up-right-from-square fa-xs ml-1.5"></i></button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <img src="./img/my-photo.png" alt="" class="flex justify-center">
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div class="flex flex-col items-center">
+              <p class="font-poppins text-white text-2xl font-bold mb-3">Look More</p>
+              <a href="#AboutMe" class="animate-bounce"><i class="fa-solid fa-caret-down fa-2xl" style="color: #F6F6F6;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="AboutMe">
+      <div class="p-24">
+        <div class="flex justify-center">
+          <h1 class="font-poppins text-darkblue text-5xl font-bold">About Me</h1>
+        </div>
+        <div class="flex flex-row justify-between items-center gap-x-32">
+          <div>
+            <img src="./img/about-me.png" alt="">
+          </div>
+          <div>
+            <p class="font-poppins text-darkblue text-xl font-medium">I am a Computer Science student at Bina Nusantara University with experience participating in student organizations. I have an interest in software engineering. Have good skills in using Python, Java, C, HTML, and CSS. Now looking for internship experience especially in the field of software engineering.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Skills">
+      <div class="pb-24 px-24">
+        <div class="flex justify-center mb-16">
+          <h1 class="font-poppins text-darkblue text-5xl font-bold">Skills</h1>
+        </div>
+        <div class="flex flex-wrap justify-between">
+          <div class="flex flex-col items-center w-48 drop-shadow-normal transform hover:scale-110 transition ease-in-out duration-500">
+            <div class="rounded-full bg-hotpink mb-6">
+              <img src="./img/skill-design.png" alt="" class="p-5 ">
+            </div>
+            <p  class="font-poppins text-darkblue text-xl font-medium">Design</p>
+          </div>
+          <div class="flex flex-col items-center w-48 drop-shadow-normal transform hover:scale-110 transition ease-in-out duration-500">
+            <div class="rounded-full bg-hotpink mb-6">
+              <img src="./img/skill-fe.png" alt="" class="p-5 ">
+            </div>
+            <p  class="font-poppins text-darkblue text-xl font-medium">Front-End</p>
+          </div>
+          <div class="flex flex-col items-center w-48 drop-shadow-normal transform hover:scale-110 transition ease-in-out duration-500">
+            <div class="rounded-full bg-hotpink mb-6">
+              <img src="./img/skill-be.png" alt="" class="p-5 ">
+            </div>
+            <p  class="font-poppins text-darkblue text-xl font-medium">Back-End</p>
+          </div>
+          <div class="flex flex-col items-center w-48 drop-shadow-normal transform hover:scale-110 transition ease-in-out duration-500">
+            <div class="rounded-full bg-hotpink mb-6">
+              <img src="./img/skill-com.png" alt="" class="p-5 ">
+            </div>
+            <p  class="font-poppins text-darkblue text-xl font-medium">Communication</p>
+          </div>
+          <div class="flex flex-col items-center w-48 drop-shadow-normal transform hover:scale-110 transition ease-in-out duration-500">
+            <div class="rounded-full bg-hotpink mb-6">
+              <img src="./img/skill-team.png" alt="" class="p-5 ">
+            </div>
+            <p  class="font-poppins text-darkblue text-xl font-medium">Teamwork</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="LatestProject">
+      <div class="bg-lightpink px-24 pt-24 pb-24">
+        <div class="font-poppins text-darkblue text-5xl font-bold leading-normal mb-24">
+          <h1>Latest Projects</h1>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="mx-14">
+                <div class="flex flex-row items-center borderStyle">
+                  <img src="./img/Screenshot 2023-11-27 231949.png" class="projectImage" alt="">
+                  <div class="flex flex-col gap-6 projectText">
+                    <div class="font-poppins text-4xl font-bold text-hotpink">
+                      <p>Website Grand Mall</p>
+                    </div>
+                    <p class="font-poppins text-xl font-medium text-darkblue">A mall website that provides information about the mall, stores, offers, and has a contact us form. This website was created using HTML and CSS programming languages.</p>
+                    <a href="https://github.com/NadiaLeni/GrandMall.git" target="_blank"><button class="buttonStyle2">Link Github</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mx-14">
+                <div class="flex flex-row items-center borderStyle">
+                  <img src="./img/Screenshot 2023-11-27 232210.png" class="projectImage" alt="">
+                  <div class="flex flex-col gap-6 projectText">
+                    <div class="font-poppins text-4xl font-bold text-hotpink">
+                      <p>Website Merdeka Library</p>
+                    </div>
+                    <p class="font-poppins text-xl font-medium text-darkblue">A library website that can view, add, edit, and delete books in the library. I used the Laravel framework along with HTML and CSS programming languages in its creation.</p>
+                    <a href="https://github.com/NadiaLeni/PerpustakaanIndoMerdeka.git" target="_blank"><button class="buttonStyle2">Link Github</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mx-14">
+                <div class="flex flex-row items-center borderStyle">
+                  <img src="./img/Screenshot 2023-11-27 231949.png" class="projectImage" alt="">
+                  <div class="flex flex-col gap-6 projectText">
+                    <div class="font-poppins text-4xl font-bold text-hotpink">
+                      <p>FazzMeal</p>
+                    </div>
+                    <p class="font-poppins text-xl font-medium text-darkblue">A mall website that provides information about the mall, stores, offers, and has a contact us form. This website was created using HTML and CSS programming languages.</p>
+                    <a href=""><button class="buttonStyle2">Link Github</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-next">
+            <img src="img/circle-chevron-right-solid.svg" alt="">
+          </div>
+          <div class="swiper-button-prev">
+            <img src="img/circle-chevron-left-solid.svg" alt="">
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Footer">
+      <div class="pt-24 px-24 flex flex-col items-center">
+        <div>
+          <h1 class="font-poppins text-darkblue text-4xl font-bold">Contact Me</h1>
+        </div>
+        <div class="my-8">
+          <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=nadia712leni@gmail.com" target="_blank">
+            <button class="buttonStyle2">nadia712leni@gmail.com</button>
+          </a>
+        </div>
+        <div class="mb-8 flex flex-row gap-x-32">
+          <a href="https://www.instagram.com/nad.lien40" target="_blank" class="w-6"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          <a href="https://www.linkedin.com/in/nadia-leni-lien-2b8478220/" target="_blank" class="w-6"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+          <a href="https://wa.me/6285269507083" target="_blank" class="w-6"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+          <a href="https://github.com/NadiaLeni" class="w-6"><i class="fa-brands fa-github fa-xl"></i></a>
+        </div>
+        <div class="bg-darkblue h-px w-full rounded-full opacity-25"></div>
+        <div class="my-6">
+          <p class="font-poppins text-darkblue text-xs">@ 2023 Copyright by Nadia Leni</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swipper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
